@@ -1,8 +1,12 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #00BE9A;
 }
 
 a {
   color: #00B7FF;
+}
+.jumbotron{
+	box-shadow: 5px 5px 3px #ccc;
 }

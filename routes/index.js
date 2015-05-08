@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/quizes/question',quizController.question)
-router.post('/quizes/answer',quizController.answer)
+router.get('/question',quizController.question)
+router.post('/answer',quizController.answer)
 
 module.exports = router;
