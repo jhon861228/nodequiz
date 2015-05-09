@@ -1,7 +1,8 @@
 body {
-  padding: 50px;
+  
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: #00BE9A;
+  padding-top: 70px;
 }
 
 a {
@@ -9,4 +10,7 @@ a {
 }
 .jumbotron{
 	box-shadow: 5px 5px 3px #ccc;
+}
+.container-fluid{
+
 }
