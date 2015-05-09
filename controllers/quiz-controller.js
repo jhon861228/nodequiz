@@ -1,15 +1,15 @@
 'use strict'
 
 exports.question = function(req,res){
-	res.render('question',{pregunta:'Capital de Italia'})
+	res.render('quizes/question',{pregunta:'Capital de Italia'})
 }
 exports.answer = function(req,res){
 
 	if(req.body.respuesta!=''){
 		if(req.body.respuesta === 'Roma'){
-			res.render('answer',{respuesta:'Correcta'})
+			res.render('quizes/answer',{respuesta:'Correcta'})
 		}else{
-			res.render('answer',{respuesta:'Incorrecta'})
+			res.render('quizes/answer',{respuesta:'Incorrecta'})
 		}
 		
 	}else{
