@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var partials = require('express-partials');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+console.log(process.env.DATABASE_URL)
 var app = express();
 
 // view engine setup

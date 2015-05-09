@@ -1,10 +1,11 @@
 'use strict'
 
 var path = require('path')
-
 var Sequelize = require('sequelize')
+var env = require('node-env-file')
 
-
+env(__dirname+'/../.env')
+console.log(process.env.DATABASE_URL)
 var url = process.env.DATABASE_URL.match(/(.*)\:\/\/(.*?)\:(.*)@(.*)\:(.*)\/(.*)/)
 
 var DB_name = (url[6] || null)
@@ -24,6 +25,7 @@ var sequelize = new Sequelize(DB_name,user,pwd,{
 	storage:storage,
 	omitNull:true
 })
+
 
 var Quiz = sequelize.import(path.join(__dirname,'quiz'))
 
